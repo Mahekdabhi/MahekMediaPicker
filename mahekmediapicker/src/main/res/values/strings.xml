@@ -1,0 +1,4 @@
+<resources>
+    <string name="provider" translatable="false">.provider</string>
+    <string name="crop_image">Crop Image</string>
+</resources>

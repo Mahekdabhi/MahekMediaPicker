@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="crop_statusbar_color">#ffffff</color>
+    <color name="crop_toolbar_color">#ffffff</color>
+    <color name="color_golden">#D89C5D</color>
+    <color name="color_golden_opacity">#4DD89C5D</color>
+    <color name="color_golden_opacity_F3E1CE">#F3E1CE</color>
+    <color name="color_light_gray">#DCE3E9</color>
+    <color name="text_gray">#717C8A</color>
+    <color name="color_blue">#6EA0FF</color>
+    <color name="text_gray_light">#BDCBD6</color>
+    <color name="color_brown">#A25A51</color>
+    <color name="bg_gray">#8693A4</color>
+    <color name="tab_text">#8693A4</color>
+    <color name="color_purple_stroke">#CB65A5</color>
+    <color name="color_mauve_stroke">#CB7165</color>
+    <color name="blue_29A4F7">#29A4F7</color>
+    <color name="overlay">#BF000000</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_sub">#007AFF</color>
+    <color name="color_419677">#419677</color>
+    <color name="color_FDC435">#FDC435</color>
+    <color name="color_6AB04C">#6AB04C</color>
+    <color name="color_blue_stroke">#65A6CB</color>
+    <color name="color_webinar_price_bg">#CC2C3238</color>
+    <color name="color_board_guide_line">#23C4F5</color>
+</resources>
