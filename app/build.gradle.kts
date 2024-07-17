@@ -39,9 +39,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(project(":mahekmediapicker"))
+//    implementation(project(":mahekmediapicker"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-  //  implementation("com.github.Mahekdabhi:MahekMediaPicker:v1.0.0")
+    implementation("com.github.Mahekdabhi:mahekmediapicker:1.0.1-alpha")
 }

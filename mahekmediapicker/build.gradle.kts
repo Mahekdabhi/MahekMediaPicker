@@ -21,10 +21,12 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
@@ -37,44 +39,20 @@ android {
     }
 }
 
-
 publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.mahek.imagepicker"
             artifactId = "library"
             version = "1.0"
-
             afterEvaluate {
                 from(components["release"])
             }
-
         }
-
-       /* repositories {
-            maven {
-                name = "MahekMediaPicker"
-                url = uri("https://maven.pkg.github.com/Mahekdabhi/MahekMediaPicker")
-
-            }
-        }*/
-
     }
 }
 
-/*afterEvaluate{
-    android.libraryVariants.forEach{libraryVariant ->
-        publishing.publications.create(libraryVariant.name,MavenPublication){
-            from components.findByName(libraryVariant.name)
-
-            groupId = "com.mahek.imagepicker"
-            artifactId = "imagepicker"
-            version = "1.0"
-        }
-    }
-}*/
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
