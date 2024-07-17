@@ -10,6 +10,28 @@ Media Picker is an easy-to-use library for Android that simplifies the process o
 - **Permission Handling**: Automatically handles runtime permissions for accessing media.
 - **Callback Support**: Provides callback mechanisms to receive selected media paths.
 
+## Installation
+#### Include library
+
+Add it in your root build.gradle at the end of repositories:
+```kotlin
+dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+ Add the dependency to your app level build.gradle:
+ 
+```kotlin
+ dependencies {
+	        implementation 'com.github.Mahekdabhi:mahekmediapicker:1.0'
+	}
+```
+
 ## Usage
 
 ### Initialization
