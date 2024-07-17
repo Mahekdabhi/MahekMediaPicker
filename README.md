@@ -19,7 +19,7 @@ dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 		repositories {
 			mavenCentral()
-			maven { url 'https://jitpack.io' }
+            maven { url = uri("https://www.jitpack.io" ) }
 		}
 	}
 ```
@@ -28,7 +28,7 @@ dependencyResolutionManagement {
  
 ```kotlin
  dependencies {
-	        implementation 'com.github.Mahekdabhi:mahekmediapicker:1.0'
+	        implementation('com.github.Mahekdabhi:mahekmediapicker:1.0')
 	}
 ```
 
