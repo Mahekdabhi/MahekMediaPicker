@@ -28,7 +28,7 @@ dependencyResolutionManagement {
  
 ```kotlin
  dependencies {
-	        implementation('com.github.Mahekdabhi:mahekmediapicker:1.0')
+	        implementation('com.github.Mahekdabhi:mahekmediapicker:1.0.0')
 	}
 ```
 
