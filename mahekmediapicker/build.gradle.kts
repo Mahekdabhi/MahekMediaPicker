@@ -28,7 +28,15 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+
+    publishing{
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
+
 
 publishing {
     publications {
@@ -43,17 +51,28 @@ publishing {
 
         }
 
-        repositories {
+       /* repositories {
             maven {
                 name = "MahekMediaPicker"
                 url = uri("https://maven.pkg.github.com/Mahekdabhi/MahekMediaPicker")
 
             }
-        }
+        }*/
 
     }
-
 }
+
+/*afterEvaluate{
+    android.libraryVariants.forEach{libraryVariant ->
+        publishing.publications.create(libraryVariant.name,MavenPublication){
+            from components.findByName(libraryVariant.name)
+
+            groupId = "com.mahek.imagepicker"
+            artifactId = "imagepicker"
+            version = "1.0"
+        }
+    }
+}*/
 dependencies {
 
     implementation(libs.androidx.core.ktx)
